@@ -1,0 +1,90 @@
+/* General Alignment and Grid Settings */
+.align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100vh; /* Ensures the align container takes full viewport height */
+    overflow: hidden; /* Prevents overflow from this container, might need adjustment */
+}
+
+/* Title Styling */
+.text--center {
+    position: sticky; /* Makes the title stick to the top */
+    top: 0; /* Sets the title at the very top */
+    background: #333; /* Dark background for visibility */
+    color: #fff; /* Ensures text is visible */
+    z-index: 1000; /* High z-index to keep it above other content */
+    width: 100%; /* Ensures the title spans the full width */
+    padding: 10px 0; /* Adds padding to increase visibility */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adds darker shadow for depth */
+    border-bottom: 1px solid #444; /* Adds a bottom border for separation */
+}
+
+/* Grid container adjustments for proper scrolling */
+.grid {
+    overflow-y: auto; /* Enables vertical scrolling within the grid */
+    max-height: calc(100vh - 50px); /* Adjust height calculation if necessary */
+    width: 100%;
+    margin-top: 1px; /* Ensure there's no gap between title and grid */
+}
+
+/* Further Styling */
+.payment-portal, .payment-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.form__field {
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #d44179; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #ea4c88; /* Hover effect color */
+}
+
+.error {
+    color: red;
+    margin: 10px 0;
+}
+
+.payment-entry {
+    margin-bottom: 20px;
+    border: 1px solid #444;
+}
+
+.icon, .form__input {
+    margin: 0;
+    font-weight: bold;
+    text-align: right;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.button {
+    text-align: center;
+}
