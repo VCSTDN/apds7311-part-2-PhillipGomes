@@ -1,0 +1,251 @@
+/* General Alignment and Grid Settings */
+.align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .grid {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  /* Form Structure and Styling */
+  .payment-portal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Label and Input Field Styling */
+  .payment-form label {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .payment-form input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white; /* Ensures input background is light for visibility */
+    color: black; /* Ensures text color is dark for readability */
+  }
+  
+  /* Button Styling */
+  .payment-form button {
+    padding: 10px 20px;
+    background-color: #d44179; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .payment-form button:hover {
+    background-color: #ea4c88; /* Hover effect color */
+  }
+  
+  /* Error Message Styling */
+  .error {
+    color: red;
+    margin: 10px 0;
+  }
+  
+  /* Payment Entry Styling */
+  .payment-entry {
+    margin-bottom: 20px;
+    border: 1px solid #444;
+  }
+  
+  /* Field Grouping within Forms */
+  .form__field {
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .form__input, .icon {
+    margin: 0;
+  }
+  
+  .icon {
+    font-weight: bold;
+    width: 30%;
+  }
+  
+  .form__input {
+    text-align: right;
+    width: 70%;
+  }
+  
+  /* Centering Text Globally */
+  .text--center {
+    margin-bottom: 30px; /* More space below the header */
+    font-size: 2rem; /* Larger font size for the header */
+  }
+
+  .title-new {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 200px;
+    margin-left: 200px;
+  }
+  
+
+  /*payment confirm*/
+  .payment-confirmation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #333;  /* Dark background for contrast */
+    color: #fff;  /* White text for readability */
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2); /* Soft shadow for depth */
+  }
+  
+  .payment-confirmation h3 {
+    margin-bottom: 20px;
+  }
+  
+  .payment-confirmation p {
+    margin: 10px 0;  /* Uniform margin for all paragraphs */
+    font-size: 1.1em; /* Slightly larger font size for readability */
+  }
+  
+  .payment-confirmation button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-right: 10px; /* Space between buttons */
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;  /* Green background for 'Confirm' button */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+
+  
+  .payment-confirmation button:hover {
+    opacity: 0.9; /* Slight opacity change on hover */
+  }
+
+  .cancel-button {
+    background-color: #f44336; /* Red background for 'Cancel' */
+    color: white; /* White text for visibility */
+  }
+  
+  .cancel-button:hover {
+    background-color: #d32f2f; /* Darker red on hover for effect */
+  }
+  .payment-confirmation button:nth-child(2) {
+    background-color: #f44336; /* Red background for 'Cancel' */
+    color: white; /* White text for visibility */
+  }
+  
+  .payment-confirmation button:nth-child(2):hover {
+    background-color: #d32f2f; /* Darker red on hover for effect */
+  }
+
+
+
+  /*opening*/
+  .align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;  
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #fff;  
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 20px;  
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #ea4c88;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #d44179;  
+}
+
+.grid {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;  
+}
+/* Hover and focus styles for buttons */
+.button:hover, .button:focus {
+    background-color: #d44179; /* Darker green on hover for feedback */
+    transform: translateY(-2px); /* Slight raise effect on hover */
+}
+
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        width: 100%; /* Full width container */
+    }
+
+    .button {
+        width: 80%; /* Responsive button width */
+        margin-bottom: 10px; /* Space between stacked buttons */
+    }
+}
+
+.heading-pop {
+    font-size: 2.5rem; /* Large font size for better visibility */
+    color: #ffffff; /* White color text */
+    background-color: #007bff; /* Bright background color */
+    padding: 20px; /* Padding around text */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Centering the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), /* Drop shadow for depth */
+                0 6px 20px rgba(0, 0, 0, 0.1); /* Slight shadow for additional depth */
+    transform: translateZ(20px); /* Gives a popping effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for interactive hover effect */
+}
+
+  
+  
+  

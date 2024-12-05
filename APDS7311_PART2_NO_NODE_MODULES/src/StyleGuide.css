@@ -1,0 +1,62 @@
+/* Typography */
+:root {
+    --font-main: "Poppins-Medium", Helvetica, sans-serif;
+    --font-size-base: 16px;
+    --font-size-lg: 32px;
+    --font-size-sm: 12px;
+    --line-height: 1.5;
+}
+
+/* Color Palette */
+:root {
+    --primary-color: #0f3cde;
+    --secondary-color: #000000;
+    --background-color: #ffffff;
+    --muted-color: #d9d9d9;
+    --link-color: #0f3cde;
+    --border-color: #e2e8f0;
+}
+
+/* Button Styles */
+.button-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-family: var(--font-main);
+    font-size: var(--font-size-base);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+    background-color: darkblue;
+}
+
+/* Input Fields */
+.input-field {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: var(--font-main);
+    font-size: var(--font-size-base);
+    box-sizing: border-box;
+}
+
+.input-field:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Links */
+.link {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+}
+
+.link:hover {
+    text-decoration: underline;
+}
